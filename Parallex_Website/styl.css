@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.section1 {
+    background-image: url("image/OIP.jpeg");
+    min-height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.bgdiv {
+    position: absolute;
+    margin-top: 20vh;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+.bgText {
+    background-color: #313534;
+    font-size: 40px;
+    border-radius: 4px;
+    opacity: 83%;
+    color: white;
+    padding: 20px;
+
+} 
+.txtPara1 {
+    color: black;
+    margin-top: 20px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+.txtPara1 h2 {
+    font-size: 40px;
+}
+.para1 {
+    padding: 10px;
+    margin: 15px;
+
+}
+.para1 p {
+   
+    position: absolute;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.section1 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.section1 nav .logo{
+    margin: 0 5%;
+}
+.section1 nav .logo img{
+    width: 100px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.section1 nav .navMenue ul{
+    list-style: none;
+    margin-right: 50px;
+  
+}
+.section1 nav .navMenue ul li{
+    display: inline-block;
+    margin: 0 25px;
+
+}
+.section1 nav .navMenue ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+.section1 .main{
+    display: flex;
+}
+.section1 .main .textBox{
+    margin: 0 5%;
+    position: relative;
+    top: 90px;
+}
+.section1 .main .textBox h1{
+    font-size: 55px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+.section1 .main .textBox h1 span{
+    font-size: 75px;
+    color: green;
+}
+.section1 .main .textBox p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 85px;
+}
+.section1 .main .textBox .viewProduct{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: green;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+.section1 .main .hearoImg img{
+    width: 210px;
+    position: relative;
+    top: 6%;
+    left: 125px;
+
+}
+.section1 .main .socialMedia{
+    position: absolute;
+    top: 40%;
+    left: 98%;
+    transform: translate(-50% -50%);
+    font-size: 20px;
+}
+.section1 .main .socialMedia i{
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}.section1 .main .socialMedia i:hover{
+    color: white;
+}
