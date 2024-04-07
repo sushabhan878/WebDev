@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --clr: #222327;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr);
+}
+.navBar  {
+    position: relative;
+    width: 420px;
+    height: 70px;
+    background: linear-gradient(45deg, #2196f3, #e91e63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.navBar ul {
+    width: 360px;
+    display: flex;
+}
+.navBar ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navBar ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+
+}
+.navBar ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center; 
+    color: white;
+    transition: 0.5s;
+
+}
+.navBar ul li.active a .icon {
+    transform: translateY(-32px);
+}
+.navBar ul li a .text {
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transform: translateY(20px);
+    transition: 0.5s;
+    opacity: 0;
+}
+.navBar ul li.activer a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+.navBar ul li a .circle {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border:  1.8px solid white;
+    transform: translateY(-34px) scale(0);
+}
+.navBar ul li.active a .circle{
+    transform: translateY(-34px) scale(1);
+}
+
+.indicator {
+    position: absolute;
+    top: -45%;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(45deg, #2196f3, #e91e63);
+    border: 6px solid var(--clr);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 43%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px var(--clr);
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 43%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 var(--clr); 
+}
+
+.navBar ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(70px*0));
+}
+.navBar ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(70px*1));
+}
+
+
+
